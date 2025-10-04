@@ -3,6 +3,7 @@ import ReactBeforeSliderComponent from "react-before-after-slider-component";
 import "react-before-after-slider-component/dist/build.css";
 import { Introduction } from "./Introduction";
 import { Layers } from "./Layers";
+import { ScrollFrames } from "./ScrollFrames";
 
 const sections = [
   { id: "introduccion", label: "Introduccion" },
@@ -24,20 +25,16 @@ function App() {
       <Header sections={sections} />
       <div className="w-full ">
         <img
-          className="w-full h-96 object-cover drop-shadow-2xl"
-          src="../public/VINEYARDS-AGRELO-1.jpg"
+          className="w-full h-96 object-cover drop-shadow"
+          src="/VINEYARDS-AGRELO-1.jpg"
         />
       </div>
 
       <Introduction />
 
       <Layers />
-      {sections.map((section) => (
-        <h1 id={section.id} key={section.id} className="my-96 p-16">
-          {section.label}
-        </h1>
-      ))}
 
+      <ScrollFrames />
       <div className="w-1/2">
         <ReactBeforeSliderComponent
           firstImage={firstImage}

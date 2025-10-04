@@ -4,8 +4,6 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import CssBaseline from "@mui/material/CssBaseline";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import { Link } from "react-scroll";
 
 function ElevationScroll(props) {
@@ -28,11 +26,15 @@ export const Header = ({ children, sections }) => {
     <React.Fragment>
       <CssBaseline />
       <ElevationScroll>
-        <AppBar className="!bg-gray-700 !sticky">
+        <AppBar className="!bg-white !sticky !text-black">
           <Toolbar className="flex justify-between">
-            <Typography variant="h6" component="div">
-              Hundimiento del suelo - Mendoza
-            </Typography>
+            <div className="flex gap-4 items-center">
+              <img src="/logoNasa.jpg" className="h-12" />
+              <Typography variant="h6" component="div">
+                Hundimiento del suelo - Mendoza
+              </Typography>
+            </div>
+
             <div className="flex gap-4">
               {sections.map((section) => (
                 <Link
@@ -40,7 +42,10 @@ export const Header = ({ children, sections }) => {
                   to={section.id}
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-white"
+                  offset={-80}
+                  className="cursor-pointer "
+                  spy={true}
+                  activeClass="underline"
                 >
                   {section.label}
                 </Link>
