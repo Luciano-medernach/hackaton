@@ -49,9 +49,6 @@ export const Header = ({ children, sections }) => {
           </Toolbar>
         </AppBar>
       </ElevationScroll>
-      <Container>
-        <Box>{children}</Box>
-      </Container>
     </React.Fragment>
   );
 };

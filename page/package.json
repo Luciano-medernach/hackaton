@@ -15,7 +15,12 @@
     "@fontsource/roboto": "^5.2.8",
     "@mui/icons-material": "^7.3.4",
     "@mui/material": "^7.3.4",
+    "georaster": "^1.6.0",
+    "georaster-layer-for-leaflet": "^4.1.2",
+    "leaflet": "^1.9.4",
+    "leaflet-geotiff": "^0.2.0",
     "react": "^19.1.1",
+    "react-before-after-slider-component": "^1.1.8",
     "react-dom": "^19.1.1",
     "react-scroll": "^1.9.3"
   },
