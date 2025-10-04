@@ -31,7 +31,7 @@ export const Header = ({ children, sections }) => {
             <div className="flex gap-4 items-center">
               <img src="/logoNasa.jpg" className="h-12" />
               <Typography variant="h6" component="div">
-                Hundimiento del suelo - Mendoza
+                Floor Subsidence - Mendoza
               </Typography>
             </div>
 

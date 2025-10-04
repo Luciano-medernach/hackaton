@@ -13,6 +13,7 @@ export const Layers = () => {
       zoom: 8,
       maxBounds: boundsMendoza,
       maxBoundsViscosity: 0.5,
+      minZoom: 6,
     });
 
     // Base layer
@@ -35,6 +36,11 @@ export const Layers = () => {
         name: "Vineyard",
         path: "/geojson/vinyards.geojson",
         color: "#F54927",
+      },
+      {
+        name: "Geological Failures",
+        path: "/geojson/failures.geojson",
+        color: "brown",
       },
     ];
 

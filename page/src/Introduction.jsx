@@ -1,60 +1,41 @@
 import Container from "@mui/material/Container";
-import { Comparison } from "./Comparison";
 
 export const Introduction = () => {
   return (
     <Container className="p-4" id="introduccion">
-      <h2 className="text-3xl my-2 font-bold">Introduccion</h2>
+      <h2 className="text-3xl my-2 font-bold">Introduction</h2>
       <p className="mt-2">
         <strong>
-          ¿Y si el suelo que sostiene nuestras ciudades y nuestros campos más
-          fértiles se estuviera desmoronando en silencio bajo nuestros pies?
+          What if the ground that supports our cities and our most fertile
+          fields were silently crumbling beneath our feet?
         </strong>{" "}
-        En muchas regiones del mundo, una crisis invisible está sucediendo. Para
-        satisfacer las necesidades hídricas de la agricultura intensiva y las
-        grandes metrópolis, estamos vaciando los acuíferos subterráneos a un
-        ritmo insostenible, y la consecuencia es inadvertida e irreversible: la
-        tierra misma se está hundiendo, amenazando con destruir todo lo que
-        hemos construido sobre ella.
+        In many regions of the world, an invisible crisis is unfolding. To meet
+        the water needs of intensive agriculture and large metropolises, we are
+        emptying underground aquifers at an unsustainable rate, and the
+        consequence is both unnoticed and irreversible: the land itself is
+        sinking, threatening to destroy everything we have built upon it.
       </p>
       <p className="mt-4">
-        Un ejemplo de este fenómeno es el caso del valle de San Joaquín en
-        California (US) en el cual la extracción de agua subterránea para la
-        agricultura ha permitido que esta zona se haya convertido en una de las
-        regiones agrícolas más productivas del mundo, contribuyendo al mismo
-        tiempo a una de las mayores alteraciones de la superficie terrestre
-        atribuidas a la humanidad.
+        A prime example of this phenomenon is the San Joaquin Valley in
+        California (US). There, the extraction of groundwater for agriculture
+        has allowed the area to become one of the world's most productive
+        agricultural regions, while simultaneously contributing to one of the
+        largest human-caused alterations of the Earth's surface.
       </p>
       <blockquote className="mt-8 border-l-4 border-red-500 pl-4 italic text-xl text-gray-700">
-        Pero, ¿somos ajenos a esta problematica?
+        But, are we unaffected by this issue?
       </blockquote>
       <p className="mt-8">
         {" "}
-        En el centro-oeste de Argentina se encuentra <strong>Mendoza</strong>,
-        una provincia ubicada al pie de la cordillera de los Andes. Es conocido
-        por ser un importante productor agropecuario y también por ser la
-        principal provincia vitivinícola de Argentina, concentrando más del 70%
-        de la producción nacional de vino.
+        In west-central Argentina lies Mendoza, a province located at the foot
+        of the Andes mountains. It is known for being a major agricultural
+        producer and also for being Argentina's main wine-producing province,
+        accounting for more than 70% of the national wine production.
       </p>
       <p className="mt-4">
-        California y Mendoza tienen sorprendentes similitudes que las convierten
-        en regiones comparables en varios aspectos clave. A pesar de estar en
-        hemisferios diferentes, ambas comparten características geográficas,
-        climáticas y económicas que definen su identidad.
+        Having many points in common with California, it becomes a place of
+        interest for investigating the subsidence that can occur.
       </p>
-      <div className="flex justify-between my-4">
-        <Comparison />
-        <div className="flex">
-          <img
-            src="/california_displacement.jpeg"
-            className="border-black border-2 mr-4 w-full h-64"
-          />
-          <img
-            src="/california_displacement2.jpg"
-            className="border-black border-2 w-full h-64"
-          />
-        </div>
-      </div>
     </Container>
   );
 };

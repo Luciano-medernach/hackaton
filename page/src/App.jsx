@@ -4,19 +4,23 @@ import "react-before-after-slider-component/dist/build.css";
 import { Introduction } from "./Introduction";
 import { Layers } from "./Layers";
 import { ScrollFrames } from "./ScrollFrames";
+import { Chatbot } from "./Chatbot";
+import { Typography } from "@mui/material";
+import { Footer } from "./Footer";
+import { CaliforniaMendoza } from "./CaliforniaMendoza";
 
 const sections = [
-  { id: "introduccion", label: "Introduccion" },
-  { id: "SAR", label: "SAR" },
-  { id: "california", label: "California" },
+  { id: "introduccion", label: "Introduction" },
+  { id: "subsidence", label: "Subsidence" },
+  { id: "california", label: "IA" },
 ];
 
 const firstImage = {
-  imageUrl: "https://picsum.photos/id/1018/600/400",
+  imageUrl: "/SinColorPhase.jpg",
 };
 
 const secondImage = {
-  imageUrl: "https://picsum.photos/id/1015/600/400",
+  imageUrl: "/ConColorPhase.jpg",
 };
 
 function App() {
@@ -31,19 +35,25 @@ function App() {
       </div>
 
       <Introduction />
+      <CaliforniaMendoza />
 
       <Layers />
 
       <ScrollFrames />
-      <div className="w-1/2">
-        <ReactBeforeSliderComponent
-          firstImage={firstImage}
-          secondImage={secondImage}
-          delimiterColor="#fff"
-          currentPercentPosition={50}
-          withResizeFeel={true}
-        />
+      <div className="flex flex-col m-4 justify-center items-center">
+        <div className="w-2/3 ">
+          <ReactBeforeSliderComponent
+            firstImage={firstImage}
+            secondImage={secondImage}
+            delimiterColor="#fff"
+            currentPercentPosition={20}
+            withResizeFeel={true}
+          />
+        </div>
+        <Typography className="mt-4 text-gray-700">Phase Unwrapping</Typography>
       </div>
+      <Footer />
+      <Chatbot />
     </>
   );
 }
