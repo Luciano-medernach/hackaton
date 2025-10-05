@@ -77,5 +77,11 @@ export const Layers = () => {
     Promise.all(geoJsonPromises).then(createLayerControl);
   }, []);
 
-  return <div id="map" className=" w-1/2 m-8" style={{ height: "80vh" }}></div>;
+  return (
+    <div
+      id="map"
+      className=" w-1/2 m-8 border-1 border-black"
+      style={{ height: "80vh" }}
+    ></div>
+  );
 };
