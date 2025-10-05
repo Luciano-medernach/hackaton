@@ -55,7 +55,7 @@ export const ScrollFrames = () => {
   }, []);
 
   return (
-    <div className="flex p-8" ref={containerRef} id="subsidence">
+    <div className="flex m-4 mt-12" ref={containerRef} id="subsidence">
       {/* Imagen fija a la izquierda */}
       <div
         style={{ width: "32vw" }}
@@ -66,12 +66,17 @@ export const ScrollFrames = () => {
           alt={`Frame ${frame}`}
           className="w-full h-auto border"
         />
-        <Typography>Accumulated subsidence in Mendoza</Typography>
-        <Typography> (Last 5 years in mm)</Typography>
+        <Typography className="!text-xs !md:text-xl">
+          Accumulated subsidence in Mendoza
+        </Typography>
+        <Typography className="!text-xs !md:text-xl">
+          {" "}
+          (Last 5 years in mm)
+        </Typography>
       </div>
 
       {/* Contenido de scroll */}
-      <div className="flex-1 p-8 space-y-8">
+      <div className="flex-1 pl-4 mt-4 space-y-8">
         <motion.h2
           ref={ref}
           className="mt-12 text-2xl px-4 font-extrabold font-montserrat text-black"

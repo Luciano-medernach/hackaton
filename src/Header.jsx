@@ -32,11 +32,11 @@ export const Header = ({ children, sections }) => {
             <div className="flex gap-4 items-center">
               <img src={nasaLogo} className="h-12" />
               <Typography variant="h6" component="div">
-                Floor Subsidence - Mendoza
+                Floor Subsidence
               </Typography>
             </div>
 
-            <div className="flex gap-4">
+            <div className="gap-4 hidden sm:flex">
               {sections.map((section) => (
                 <Link
                   key={section.id}

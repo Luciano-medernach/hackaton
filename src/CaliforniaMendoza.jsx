@@ -39,7 +39,6 @@ export const CaliforniaMendoza = () => {
       component={Paper}
       sx={{
         maxWidth: "900px",
-        margin: "2rem auto",
         borderRadius: "16px",
         overflow: "hidden",
         boxShadow: 4,
@@ -49,7 +48,7 @@ export const CaliforniaMendoza = () => {
         variant="h5"
         sx={{ textAlign: "center", fontWeight: "bold", my: 2 }}
       >
-        Mendoza vs California
+        Comparison
       </Typography>
       <Table>
         <TableHead>
@@ -61,13 +60,7 @@ export const CaliforniaMendoza = () => {
               align="center"
               sx={{ color: "white", fontWeight: "bold" }}
             >
-              Mendoza
-            </TableCell>
-            <TableCell
-              align="center"
-              sx={{ color: "white", fontWeight: "bold" }}
-            >
-              California
+              Mendoza & California
             </TableCell>
           </TableRow>
         </TableHead>

@@ -20,7 +20,7 @@ export const SliderSAR = () => {
   };
 
   return (
-    <Container>
+    <Container className="mt-24">
       <div className="flex flex-col m-4 justify-center items-center">
         <div className="w-2/3 ">
           <ReactBeforeSliderComponent
