@@ -32,7 +32,7 @@ export const Footer = () => {
         </a>
 
         <a
-          href="https://github.com/LautaroBarraza/procesamiento-img-Nasa-SpaceApps"
+          href="https://github.com/LautaroBarraza/image-processing-and-analysis-hackaton-nasa-space-challenge"
           className="flex gap-1 items-center"
         >
           <IconButton sx={{ color: "white" }}>

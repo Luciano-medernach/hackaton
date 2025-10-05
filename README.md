@@ -1,16 +1,61 @@
-# React + Vite
+# 🌍 Ground Subsidence Analysis in Mendoza
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an interactive web application designed to **visualize, analyze, and raise awareness about ground subsidence in Mendoza, Argentina**.  
+It combines satellite data, geospatial analysis, and educational content to make the problem both **visible and understandable** for a wider audience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **Interactive Map (Leaflet + GeoJSON)**  
+  Display of geospatial layers including water extraction, water flow, and land use.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Data Storytelling**  
+  Explanations of how groundwater over-extraction, drought cycles, and geological factors contribute to soil subsidence in Mendoza.
 
-## Expanding the ESLint configuration
+- **Responsive Design**  
+  Built with **React + Vite**, styled using **TailwindCSS** and **Material UI** to ensure a modern and accessible user experience across devices.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Animations & Scroll Effects**  
+  Smooth fade-in effects and scroll-based storytelling for a more engaging presentation.
+
+- **Chatbot Integration** 🤖  
+  A floating chatbot assistant provides interactive guidance and answers to frequently asked questions.
+
+- **Bilingual Support (EN/ES)**  
+  The application can be adapted to display content in both English and Spanish.
+
+- **Deployment on GitHub Pages**  
+  Accessible online with automated builds and deployment.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework:** React (with Vite)
+- **Styling:** TailwindCSS, Material UI
+- **Maps & Data:** Leaflet + GeoJSON
+- **Animations:** AOS / React animation libraries
+- **Version Control:** Git + GitHub
+- **Deployment:** GitHub Pages
+
+---
+
+## 📦 Scripts
+
+```bash
+# Run in development
+npm run dev
+
+# Build for production
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+
+# Lint project files
+npm run lint
+
+# Preview production build locally
+npm run preview
+```
