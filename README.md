@@ -22,9 +22,6 @@ It combines satellite data, geospatial analysis, and educational content to make
 - **Chatbot Integration** 🤖  
   A floating chatbot assistant provides interactive guidance and answers to frequently asked questions.
 
-- **Bilingual Support (EN/ES)**  
-  The application can be adapted to display content in both English and Spanish.
-
 - **Deployment on GitHub Pages**  
   Accessible online with automated builds and deployment.
 
