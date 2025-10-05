@@ -11,6 +11,7 @@ import { SliderSAR } from "./SliderSAR";
 import vineyards from "/VINEYARDS-AGRELO-1.jpg";
 import { DisplacementVelocity } from "./DisplacementVelocity";
 import { LongTermPrediction } from "./LongTermPrediction";
+import { Thanks } from "./Thanks";
 
 const sections = [
   { id: "introduccion", label: "Introduction" },
@@ -38,6 +39,7 @@ function App() {
       <SliderSAR />
       <DisplacementVelocity />
       <LongTermPrediction />
+      <Thanks />
       <Footer />
       <Chatbot />
     </>
