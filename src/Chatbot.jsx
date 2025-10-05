@@ -36,7 +36,7 @@ export const Chatbot = () => {
           setOpenBot((prev) => !prev);
           setOpenPopover(false);
         }}
-        className="!fixed bottom-4 right-4 z-50 border-r-8"
+        className="!fixed bottom-4 right-4 z-10000 border-r-8"
       >
         {openBot ? (
           <CloseIcon />
@@ -49,7 +49,7 @@ export const Chatbot = () => {
       </Button>
 
       <div
-        className={`fixed bottom-12 right-4 w-4/5 max-w-sm md:max-w-md h-[80vh] shadow-lg rounded-xl overflow-hidden z-1000 transform transition-all duration-300 ${
+        className={`fixed bottom-12 right-4 w-4/5 max-w-sm md:max-w-md h-[80vh] shadow-lg rounded-xl overflow-hidden z-10000 transform transition-all duration-300 ${
           openBot
             ? "opacity-100 scale-100"
             : "opacity-0 scale-95 pointer-events-none"
@@ -63,7 +63,7 @@ export const Chatbot = () => {
       </div>
 
       {openPopover && !openBot && (
-        <div className="fixed bottom-16 right-8 z-60 bg-white text-purple-800 border-purple-300 border-1 p-3 rounded-lg shadow-lg animate-slide-in pointer-events-auto drop-shadow-black ">
+        <div className="fixed bottom-16 right-8 z-10000 bg-white text-purple-800 border-purple-300 border-1 p-3 rounded-lg shadow-lg animate-slide-in pointer-events-auto drop-shadow-black ">
           Do you want to know if this happens in your city? 😊
         </div>
       )}
