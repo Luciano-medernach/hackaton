@@ -24,22 +24,22 @@ export const Layers = () => {
     const geoJsonFiles = [
       {
         name: "Water Extraction",
-        path: "/geojson/water_extraction.geojson",
+        path: "/hackaton/geojson/water_extraction.geojson",
         color: "#27F5B0",
       },
       {
         name: "Water Flow",
-        path: "/geojson/water_flow.geojson",
+        path: "/hackaton/geojson/water_flow.geojson",
         color: "#276CF5",
       },
       {
         name: "Vineyard",
-        path: "/geojson/vinyards.geojson",
+        path: "/hackaton/geojson/vinyards.geojson",
         color: "#F54927",
       },
       {
         name: "Geological Failures",
-        path: "/geojson/failures.geojson",
+        path: "/hackaton/geojson/failures.geojson",
         color: "brown",
       },
     ];

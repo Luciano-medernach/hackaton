@@ -64,7 +64,7 @@ export const Chatbot = () => {
 
       {openPopover && !openBot && (
         <div className="fixed bottom-16 right-8 z-60 bg-white text-purple-800 border-purple-300 border-1 p-3 rounded-lg shadow-lg animate-slide-in pointer-events-auto drop-shadow-black ">
-          ¡Hola! Puedo responder tus preguntas 😊
+          Hi! I can answer your questions. 😊
         </div>
       )}
     </>

@@ -12,27 +12,42 @@ export const ScrollFrames = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   useEffect(() => {
+    const preloadImages = () => {
+      for (let i = 1; i <= totalFrames; i++) {
+        const img = new Image();
+        img.src = `/hackaton/displacement/frame_${i}.png`;
+      }
+    };
+    preloadImages();
+  }, []);
+
+  useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
       if (!containerRef.current) return;
 
-      const rect = containerRef.current.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const rect = containerRef.current.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
 
-      const start =
-        windowHeight > rect.top + screen.height
-          ? windowHeight - (rect.top + screen.height)
-          : 0;
+          const start =
+            windowHeight > rect.top + screen.height
+              ? windowHeight - (rect.top + screen.height)
+              : 0;
 
-      const progress = Math.min(1, start / (rect.height - screen.height));
+          const progress = Math.min(1, start / (rect.height - screen.height));
+          const newFrame = Math.min(
+            totalFrames,
+            Math.max(0, Math.ceil(progress * (totalFrames - 1)))
+          );
 
-      const newFrame = Math.min(
-        totalFrames,
-        Math.max(0, Math.ceil(progress * (totalFrames - 1)))
-      );
-
-      setFrame(newFrame);
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
+          setFrame(newFrame);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -47,7 +62,7 @@ export const ScrollFrames = () => {
         className="sticky top-8 self-start flex-shrink-0 h-screen  flex flex-col justify-center items-center"
       >
         <img
-          src={`/displacement/frame_${frame}.png`}
+          src={`/hackaton/displacement/frame_${frame}.png`}
           alt={`Frame ${frame}`}
           className="w-full h-auto border"
         />

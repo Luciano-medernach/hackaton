@@ -2,12 +2,15 @@ import { useState } from "react";
 import { Tabs, Tab, Box, Typography, Paper, Container } from "@mui/material";
 import ReactBeforeSliderComponent from "react-before-after-slider-component";
 
+import withoutColorPhase from "/SinColorPhase.jpg";
+import withColorPhase from "/ConColorPhase.jpg";
+
 const firstImage = {
-  imageUrl: "/SinColorPhase.jpg",
+  imageUrl: withoutColorPhase,
 };
 
 const secondImage = {
-  imageUrl: "/ConColorPhase.jpg",
+  imageUrl: withColorPhase,
 };
 
 export const SliderSAR = () => {
@@ -28,7 +31,7 @@ export const SliderSAR = () => {
             withResizeFeel={true}
           />
         </div>
-        <Typography className="mt-4 text-gray-700">Phase Unwrapping</Typography>
+        <Typography className="mt-4 text-gray-700">Colored Phase</Typography>
       </div>
 
       <Paper
@@ -48,11 +51,10 @@ export const SliderSAR = () => {
           variant="fullWidth"
           sx={{ bgcolor: "grey.200" }}
         >
-          <Tab label="General" />
-          <Tab label="Detailed" />
+          <Tab label="Tool utilized" />
+          <Tab label="What does phase mean?" />
         </Tabs>
 
-        {/* Contenido segun pestaña */}
         <Box sx={{ p: 3 }}>
           {value === 0 && (
             <>

@@ -9,11 +9,12 @@ import { Footer } from "./Footer";
 import { CaliforniaMendoza } from "./CaliforniaMendoza";
 import { SliderSAR } from "./SliderSAR";
 import { Typography } from "@mui/material";
+import vineyards from "/VINEYARDS-AGRELO-1.jpg";
 
 const sections = [
   { id: "introduccion", label: "Introduction" },
+  { id: "map", label: "Map" },
   { id: "subsidence", label: "Subsidence" },
-  { id: "california", label: "IA" },
 ];
 
 function App() {
@@ -21,10 +22,7 @@ function App() {
     <>
       <Header sections={sections} />
       <div className="w-full ">
-        <img
-          className="w-full h-96 object-cover drop-shadow"
-          src="/VINEYARDS-AGRELO-1.jpg"
-        />
+        <img className="w-full h-96 object-cover drop-shadow" src={vineyards} />
       </div>
 
       <Introduction />

@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import CssBaseline from "@mui/material/CssBaseline";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { Link } from "react-scroll";
+import nasaLogo from "/logoNasa.jpg";
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -29,7 +30,7 @@ export const Header = ({ children, sections }) => {
         <AppBar className="!bg-white !sticky !text-black">
           <Toolbar className="flex justify-between">
             <div className="flex gap-4 items-center">
-              <img src="/logoNasa.jpg" className="h-12" />
+              <img src={nasaLogo} className="h-12" />
               <Typography variant="h6" component="div">
                 Floor Subsidence - Mendoza
               </Typography>
