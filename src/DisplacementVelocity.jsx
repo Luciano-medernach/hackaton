@@ -15,7 +15,7 @@ export const DisplacementVelocity = () => {
           <img
             src={displacementImg}
             alt="Image 1"
-            className="w-full h-auto rounded-lg border"
+            className="w-full h-64 rounded-lg border"
           />
           <Typography className="mt-2 !text-sm md:!text-base text-center">
             <div>Analyzed zones with distinct average displacements:</div>
@@ -46,7 +46,7 @@ export const DisplacementVelocity = () => {
           <img
             src={velocityImg}
             alt="Image 2"
-            className="w-full h-auto rounded-lg border"
+            className="w-full h-64 rounded-lg border"
           />
           <Typography className="mt-2 !text-sm md:!text-base text-center">
             Average ground subsidence rate per year obtained from more than 150

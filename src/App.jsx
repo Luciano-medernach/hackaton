@@ -8,9 +8,9 @@ import { Chatbot } from "./Chatbot";
 import { Footer } from "./Footer";
 import { CaliforniaMendoza } from "./CaliforniaMendoza";
 import { SliderSAR } from "./SliderSAR";
-import { Typography } from "@mui/material";
 import vineyards from "/VINEYARDS-AGRELO-1.jpg";
 import { DisplacementVelocity } from "./DisplacementVelocity";
+import { LongTermPrediction } from "./LongTermPrediction";
 
 const sections = [
   { id: "introduccion", label: "Introduction" },
@@ -37,6 +37,7 @@ function App() {
       <ScrollFrames />
       <SliderSAR />
       <DisplacementVelocity />
+      <LongTermPrediction />
       <Footer />
       <Chatbot />
     </>
